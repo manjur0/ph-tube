@@ -39,6 +39,7 @@ function displayCategoriesVideos(id) {
 // Display Videos
 const displayVideos = (videos) => {
   const videosContainer = document.getElementById("videos-container");
+  videosContainer.innerHTML = "";
 
   videos.forEach((video) => {
     const div = document.createElement("div");
@@ -98,4 +99,3 @@ const displayVideos = (videos) => {
 };
 
 loadCatagorys();
-
